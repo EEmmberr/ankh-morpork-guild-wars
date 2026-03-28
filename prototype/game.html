@@ -296,6 +296,17 @@
             margin-bottom: 20px;
         }
 
+        #modal-choices {
+            display: none;
+            flex-direction: column;
+            gap: 10px;
+            margin-bottom: 20px;
+        }
+
+        #modal-choices button {
+            width: 100%;
+        }
+
         .phase-indicator {
             background: rgba(212, 175, 55, 0.2);
             padding: 10px 20px;
@@ -447,7 +458,8 @@
         <div class="modal" id="modal">
             <div class="modal-content">
                 <h2 id="modal-title">Event</h2>
-                <p id="modal-text" style="margin-bottom: 30px; font-size: 1.1rem;"></p>
+                <p id="modal-text" style="margin-bottom: 20px; font-size: 1.1rem; white-space: pre-line;"></p>
+                <div id="modal-choices"></div>
                 <button class="primary" id="modal-btn">Continue</button>
             </div>
         </div>
